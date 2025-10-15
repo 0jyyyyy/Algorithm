@@ -1,2 +1,2 @@
-id = input().lower()
-print(f"{id}"+"??!")
+n = input()
+print(n + "??!")
