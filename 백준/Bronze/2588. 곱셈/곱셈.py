@@ -1,7 +1,11 @@
-a = int(input())
-b = input()
+n1 = int(input())
+n2 = int(input())
 
-print(a * int(b[2]))
-print(a * int(b[1]))
-print(a * int(b[0]))
-print(a * int(b))
+n2_1 = n2 % 10 #5 
+n2_2 = ((n2-n2_1) % 100) // 10 # 8
+n2_3 = (n2-n2_1) // 100 # 3
+
+print(n1 * n2_1)
+print(n1 * n2_2)
+print(n1 * n2_3)
+print(n1 * n2)
