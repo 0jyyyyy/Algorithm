@@ -1,4 +1,3 @@
-A,B,C = input().split()
+A,B,C = map(int,input().split())
 
-sum = int(A)+int(B)+int(C)
-print(sum)
+print(A+B+C)
