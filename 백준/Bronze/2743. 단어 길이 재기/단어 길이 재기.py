@@ -1,2 +1,3 @@
-n = input()
-print(len(n[0:]))
+st = input()
+
+print(len(st))
