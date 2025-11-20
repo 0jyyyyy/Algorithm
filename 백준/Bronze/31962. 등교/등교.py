@@ -1,14 +1,13 @@
 N,X = map(int, input().split())
-s_ls = []
-t_ls = []
+result = []
 
 for _ in range(N):
   S,T = map(int,input().split())
-  s_ls.append(S)
-  t_ls.append(T)
-  
-result = min(s_ls) + min(t_ls)
-if result <= X:
-  print(max(s_ls))
-else:
+  st = S+T
+  if st <= X:
+    result.append(S)
+
+if len(result) == 0:
   print(-1)
+else:
+  print(max(result))
